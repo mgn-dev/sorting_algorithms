@@ -93,6 +93,9 @@ void shell_sort(int *array, size_t size)
 {
 	int temp, k, i, j, gap, n = (int)size;
 
+	if (array == NULL || size < 2)
+		return;
+
 	for (k = calc_max_term(size); k >= 1; k--)
 	{
 		gap = calc_gap(k);
