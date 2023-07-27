@@ -53,10 +53,6 @@ int calc_max_term(size_t size)
 	double upper_limit = _ceil(size / 3);
 	int curr_gap = 1, k = 1;
 
-	(void)k;
-	(void)curr_gap;
-	(void)upper_limit;
-
 	for (k = 1; curr_gap <= upper_limit; k++)
 		curr_gap = (int)((_pow(3, k) - 1) / 2);
 
